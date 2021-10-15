@@ -35,3 +35,8 @@ button {
   margin-top: 50px;
   margin-left: 50px;
 }
+
+.box {
+  width: 30px;
+  height: 30px;
+}
