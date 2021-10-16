@@ -15,10 +15,11 @@ function handleSubmit(event) {
     return alert("Please fill in all the fields!");
     }
   
-    const formData = new FormData(event.currentTarget);
-    formData.forEach((value, name) => {
-    console.log(name, value);
-  })
+ const users = {
+      email: email.value,
+      password: password.value,
+  }
+  console.log(users);
   
   event.currentTarget.reset();
 }

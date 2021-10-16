@@ -7,6 +7,7 @@ validationInput.addEventListener("blur", (event) => {
         validationInput.classList.remove("invalid");
     } else {
         validationInput.classList.add("invalid");
+        validationInput.classList.remove("valid");
 
     } 
 })
