@@ -2,15 +2,13 @@
 
 const itemEl = document.querySelectorAll(".item");
 console.log(`Number of categories: ${itemEl.length}`);
+const array = [...itemEl]
 
-for (const element of itemEl) {
-    
-    const titleEl = element.querySelector("h2");
+array.map(element => {const titleEl = element.querySelector("h2");
     const partOfCategories = element.querySelector("ul");
     
-    console.log(`
+    return console.log(`
     Category: ${titleEl.textContent}
-    Elements: ${partOfCategories.children.length}`);
-    
-}
+    Elements: ${partOfCategories.children.length}`);})
+
 
